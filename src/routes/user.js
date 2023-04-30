@@ -1,11 +1,9 @@
 import { Router } from "express"
-import User from "../app/Models/User"
+import UserStoreController from "../app/Http/Controllers/User/UserStoreController"
 
 const userRouter = Router()
 
-userRouter.get('/', async (req, res) => {
-    return res.json(await User.find({ "email.address": '2@gmail.com' })).status(200)
-})
+userRouter.post('/', UserStoreController.handle)
 
 export {
     userRouter

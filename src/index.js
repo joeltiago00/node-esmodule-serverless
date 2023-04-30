@@ -5,6 +5,9 @@ import DatabaseConnectionHandler from "./database/DatabaseConnectionHandler";
 
 let app = express();
 
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json({ limit: "50mb" }))
+
 DatabaseConnectionHandler.handle()
 
 app = RouteServiceProvider.handle(app)

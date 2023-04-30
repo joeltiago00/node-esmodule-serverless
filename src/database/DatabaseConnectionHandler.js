@@ -10,7 +10,12 @@ class DatabaseConnectionHandler {
             default: throw new Error('Database connection not supported.')
         }
 
-        db.connect()
+        try {
+            db.connect()
+        } catch (err) {
+            console.log(err);
+        }
+
     }
 }
 
