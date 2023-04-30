@@ -4,15 +4,19 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs18.x
+  environment:
+    DB_CONNECTION: 'mongodb'
+    DB_HOST: 'mongodb+srv://veraluciasebastiaooo12:9fzMgpdKBN8jh5SG@cluster0.vivi9v9.mongodb.net/?retryWrites=true&w=majority'
 
 functions:
   api:
-    handler: index.handler
+    handler: src/index.handler
     events:
       - httpApi: '*'
 
 plugins:
   - serverless-esbuild
+  - serverless-offline
 
 custom:
   esbuild:
