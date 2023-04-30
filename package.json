@@ -10,7 +10,11 @@
   },
   "devDependencies": {
     "esbuild": "^0.17.18",
+    "nodemon": "^2.0.22",
     "serverless-esbuild": "^1.43.1",
     "serverless-offline": "^12.0.4"
+  },
+  "scripts": {
+    "dev": "nodemon -e js  --exec sls offline"
   }
 }
