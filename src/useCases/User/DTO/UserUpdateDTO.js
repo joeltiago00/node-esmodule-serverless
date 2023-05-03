@@ -1,23 +1,19 @@
-import ToDatabase from "../../ToDatabase"
+import cleanObject from '../../../utils/cleanObject';
 
 class UserUpdateDTO {
-    firstName
-    lastName
+  firstName;
+  lastName;
 
-    constructor(firstName, lastName) {
-        this.firstName = firstName
-        this.lastName = lastName
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
 
-        return this
-    }
+    return this;
+  }
 
-    toDatabase() {
-        return ToDatabase.handle(this)
-        return {
-            first_name: this.firstName,
-            last_name: this.lastName,
-        }
-    }
+  toDatabase() {
+    return cleanObject(this);
+  }
 }
 
-export default UserUpdateDTO
+export default UserUpdateDTO;
