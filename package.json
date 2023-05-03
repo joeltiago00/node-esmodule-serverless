@@ -21,7 +21,7 @@
     "serverless-offline": "^12.0.4"
   },
   "scripts": {
-    "off:dev": "nodemon -e js --exec sls offline",
+    "off:dev": "nodemon -e js --exec sls offline --noTimeout",
     "test": "jest"
   }
 }

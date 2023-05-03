@@ -25,6 +25,10 @@ class UserRepository {
       deleted_at: null,
     });
   }
+
+  async list() {
+    return this.#model.find({ deleted_at: null });
+  }
 }
 
 export default new UserRepository();
