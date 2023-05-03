@@ -13,7 +13,7 @@ class UserStoreDTO {
         return this
     }
 
-    toObject() {
+    toDatabase() {
         return {
             first_name: this.firstName,
             last_name: this.lastName,
