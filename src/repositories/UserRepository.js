@@ -1,4 +1,3 @@
-import mongoose from 'mongoose';
 import User from '../app/Models/User';
 
 class UserRepository {
@@ -20,7 +19,7 @@ class UserRepository {
   }
 
   async findById(userId) {
-    return await this.#model.find({
+    return await this.#model.findOne({
       _id: userId,
       deleted_at: null,
     });
