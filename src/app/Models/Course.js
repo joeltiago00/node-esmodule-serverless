@@ -1,40 +1,32 @@
 import mongoose from 'mongoose';
 
-const userSchema = new mongoose.Schema({
-  first_name: {
-    type: String,
-    minlength: 2,
-    maxlength: 100,
+const courseSchema = new mongoose.Schema({
+  owner_id: {
+    type: mongoose.Types.ObjectId,
     required: true,
   },
-  last_name: {
-    type: String,
-    minlength: 2,
-    maxlength: 100,
-    required: false,
-  },
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  email_verfied_at: {
-    type: Date,
-    default: null,
-  },
-  password: {
+  name: {
     type: String,
     required: true,
   },
-  roles: {
+  description: {
+    type: String,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  categories: {
     type: Array,
-    enum: ['user', 'course_owner', 'admin'],
     required: true,
   },
-  is_active: {
+  rating: {
+    type: Number,
+  },
+  is_visible: {
     type: Boolean,
     required: true,
-    default: true,
+    default: false,
   },
   created_at: {
     type: Date,
@@ -54,6 +46,6 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-const User = mongoose.model('User', userSchema);
+const Course = mongoose.model('Course', courseSchema);
 
-export default User;
+export default Course;
