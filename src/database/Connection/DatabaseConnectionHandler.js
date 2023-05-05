@@ -1,4 +1,4 @@
-import database from '../config/database';
+import database from '../../config/database';
 import MongoDBConnector from './Instances/MongoDBConnector';
 
 class DatabaseConnectionHandler {

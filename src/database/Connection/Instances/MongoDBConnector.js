@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import database from '../../config/database';
+import database from '../../../config/database';
 
 class MongoDBConnector {
   connect() {

@@ -1,7 +1,7 @@
 import serverless from 'serverless-http';
 import express from 'express';
 import RouteServiceProvider from './app/Providers/RouteServiceProvider';
-import DatabaseConnectionHandler from './database/DatabaseConnectionHandler';
+import DatabaseConnectionHandler from './database/Connection/DatabaseConnectionHandler';
 
 let app = express();
 
