@@ -28,7 +28,6 @@ const userSchema = new mongoose.Schema({
   },
   roles: {
     type: Array,
-    enum: ['user', 'course_owner', 'admin'],
     required: true,
   },
   is_active: {

@@ -5,7 +5,7 @@ const courseSchema = new mongoose.Schema({
     type: mongoose.Types.ObjectId,
     required: true,
   },
-  name: {
+  title: {
     type: String,
     required: true,
   },
@@ -22,6 +22,7 @@ const courseSchema = new mongoose.Schema({
   },
   rating: {
     type: Number,
+    default: 0,
   },
   is_visible: {
     type: Boolean,

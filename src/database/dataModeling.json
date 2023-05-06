@@ -58,6 +58,7 @@
     "status": "string",
     "price": "int",
     "refound_reason": "string",
+    "refounded_at": "date",
     "created_at": "date",
     "updated_at": "date",
     "deleted_at": "date"

@@ -1,3 +1,4 @@
+import { courseRouter } from '../../routes/course';
 import { userRouter } from '../../routes/user';
 
 class RouteServiceProvider {
@@ -10,6 +11,7 @@ class RouteServiceProvider {
     });
 
     app.use('/user', userRouter);
+    app.use('/course', courseRouter);
 
     return app;
   }

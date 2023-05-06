@@ -10,7 +10,7 @@ const buySchema = new mongoose.Schema({
     required: true,
   },
   payment_type: {
-    type: string,
+    type: String,
     required: true,
   },
   status: {

@@ -1,5 +1,5 @@
 import UserShow from '../../../../useCases/User/UserShow';
-import UserTransformer from '../../Resources/User/UserTransformer';
+import UserTransformer from '../../Transformers/User/UserTransformer';
 
 class UserShowController {
   async handle(req, res) {

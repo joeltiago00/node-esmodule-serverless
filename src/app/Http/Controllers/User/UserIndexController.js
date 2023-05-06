@@ -1,5 +1,5 @@
 import UserIndex from '../../../../useCases/User/UserIndex';
-import UserTransformer from '../../Resources/User/UserTransformer';
+import UserTransformer from '../../Transformers/User/UserTransformer';
 
 class UserIndexController {
   async handle(req, res) {
