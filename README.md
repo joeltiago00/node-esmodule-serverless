@@ -1,5 +1,4 @@
-Esse é um projeto de estudo onde implemento ao máximo meus conhecimentos até o momento (iniciado em: 04/05/2023 - finalizado em: wip).
-
+WIP
 Este projeto é uma plataforma de cursos, onde será ralizado a venda e execução do mesmo através de vídeo aulas.
 
 O projeto contará com
